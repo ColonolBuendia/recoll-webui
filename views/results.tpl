@@ -14,7 +14,7 @@
     <br style="clear: both">
 </div>
 %include pages query=query, config=config, nres=nres
-<div id="results">
+<div id="results" style="word-break: break-word;">
 %for i in range(0, len(res)):
     %include result d=res[i], i=i, query=query, config=config, query_string=query_string, hasrclextract=hasrclextract
 %end
