@@ -31,11 +31,11 @@ except:
 #{{{ settings
 # settings defaults
 DEFAULTS = {
-    'context': 30,
+    'context': 20,
     'stem': 1,
     'timefmt': '%c',
-    'dirdepth': 3,
-    'maxchars': 500,
+    'dirdepth': 1,
+    'maxchars': 200,
     'maxresults': 0,
     'perpage': 25,
     'csvfields': 'filename title author size time mtype url',
