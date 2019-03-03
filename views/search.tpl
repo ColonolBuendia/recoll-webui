@@ -11,7 +11,7 @@
         <a href="settings" tabindex="-1"><input type="button" value="Settings"></a>
     </td>
     <td>
-
+    <td width="80%">
         %for d in sorted(dirs, key=str.lower):
             %space = "&nbsp;" * (4 * d.count('/'))
             %if d in query['dir']:
