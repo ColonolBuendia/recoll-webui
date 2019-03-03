@@ -4,14 +4,14 @@
 <form action="results" method="get">
 <table id="form">
 <tr>
-        <b>Query</b>
+
         <input tabindex="0" type="search" name="query" value="{{query['query']}}" autocomplete="off" autofocus><br><br>
         <input type="submit" value="Search">&nbsp;
         <a href="./" tabindex="-1"><input type="button" value="Reset"></a>&nbsp;
         <a href="settings" tabindex="-1"><input type="button" value="Settings"></a>
     </td>
     <td>
-        <select id="folders" name="dir">
+
         %for d in sorted(dirs, key=str.lower):
             %space = "&nbsp;" * (4 * d.count('/'))
             %if d in query['dir']:
@@ -22,7 +22,7 @@
             <option {{selected}} value="{{d}}">{{!space}}{{re.sub('.+/','', d)}}</option>
         %end
         </select><br>
-        <input name="after" value="{{query['after']}}" autocomplete="off"> &mdash; <input name="before" value="{{query['before']}}" autocomplete="off">
+        <input name="after" value="{{query['after']}}" autocomplete="off">  <input name="before" value="{{query['before']}}" autocomplete="off">
     </td>
     <!--
     <td>
