@@ -1,6 +1,7 @@
 <html>
 <head>
     <title>recoll{{title}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="static/style.css">
     <script type="text/javascript" src="static/jquery.js"></script>
     <script type="text/javascript" src="static/extra.js"></script>
