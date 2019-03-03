@@ -4,14 +4,14 @@
 <form action="results" method="get">
 <table id="form">
 <tr>
-    <td width="50%">
+    <td width="80%">
         <b>Query</b>
-        <input tabindex="0" type="search" name="query" value="{{query['query']}}" autofocus><br><br>
+        <input tabindex="0" type="search" name="query" value="{{query['query']}}" autocomplete="off" autofocus><br><br>
         <input type="submit" value="Search">&nbsp;
         <a href="./" tabindex="-1"><input type="button" value="Reset"></a>&nbsp;
         <a href="settings" tabindex="-1"><input type="button" value="Settings"></a>
     </td>
-    <td width="30%">
+    <td>
         <b>Folder</b><br>
         <select id="folders" name="dir">
         %for d in sorted(dirs, key=str.lower):
@@ -27,6 +27,7 @@
         <b>Dates</b> <small class="gray">YYYY[-MM][-DD]</small><br>
         <input name="after" value="{{query['after']}}" autocomplete="off"> &mdash; <input name="before" value="{{query['before']}}" autocomplete="off">
     </td>
+    <!--
     <td>
         <b>Sort by</b>
         <select name="sort">
@@ -49,6 +50,7 @@
             %end
         </select>
     </td>
+-->
 </tr>
 </table>
 <input type="hidden" name="page" value="1" />
